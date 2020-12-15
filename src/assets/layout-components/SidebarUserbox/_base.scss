@@ -1,0 +1,49 @@
+//  Core
+
+.app-sidebar {
+  &--userbox {
+    @include border-radius($border-radius-sm);
+    padding: $spacer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: ($layout-spacer / 3) ($layout-spacer / 2) ($layout-spacer / 5);
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s $app-sidebar-transition;
+
+    .btn-userbox {
+      white-space: nowrap;
+      box-shadow: none;
+    }
+
+    .card-tr-actions {
+      position: absolute;
+      right: ($spacer / 2);
+      top: ($spacer / 3);
+      transition: all 0.5s $app-sidebar-transition;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .avatar-icon-wrapper {
+      margin: 0;
+      transition: all 0.5s $app-sidebar-transition;
+
+      .badge-circle {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+// Themes
+
+@import "themes/dark";
+@import "themes/light";
+
+// Modifiers
+
+@import "modifiers/collapsed";

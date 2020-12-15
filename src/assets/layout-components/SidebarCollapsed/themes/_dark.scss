@@ -1,0 +1,45 @@
+// Sidebar dark
+
+.app-sidebar {
+
+  &--overlay {
+    &:after {
+      content: '';
+      background: $black;
+      opacity: .45;
+      z-index: 3;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    & > * {
+      z-index: 4;
+    }
+  }
+
+  &--dark {
+    .sidebar-menu-collapsed {
+      li {
+
+        a {
+          background: transparent;
+          color: rgba($white, .6);
+
+          &:hover {
+            background: rgba($white, .1);
+            color: rgba($white, 1);
+          }
+
+          &.active {
+            background: $white;
+            color: rgba($primary, 1);
+
+          }
+        }
+      }
+    }
+  }
+}

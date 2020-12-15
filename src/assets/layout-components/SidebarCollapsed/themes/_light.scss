@@ -1,0 +1,21 @@
+// Sidebar light
+
+.app-sidebar {
+  &--light {
+    .sidebar-menu-collapsed {
+      li {
+
+        a {
+          background: transparent;
+          color: rgba($primary, .5);
+
+          &.active,
+          &:hover {
+            background: rgba($primary, .1);
+            color: rgba($primary, 1);
+          }
+        }
+      }
+    }
+  }
+}

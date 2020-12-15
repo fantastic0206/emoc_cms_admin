@@ -1,0 +1,37 @@
+// Collapsed Sidebar
+@include media-breakpoint-up(lg) {
+  .app-sidebar-collapsed {
+    .app-sidebar {
+
+      &--userbox {
+        background: transparent;
+
+        .userbox-details,
+        .btn-userbox {
+          display: none;
+        }
+
+        .card-tr-actions {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+
+      &:not(.app-sidebar--mini):hover {
+        .app-sidebar--userbox {
+
+          .userbox-details,
+          .btn-userbox,
+          .card-tr-actions {
+            display: block;
+          }
+
+          .card-tr-actions {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

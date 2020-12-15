@@ -1,0 +1,80 @@
+.app-main {
+  .app-content {
+    .app-content--inner {
+      padding: 0;
+    }
+  }
+}
+
+.MuiList-root .MuiListItem-root.MuiListItem-button {
+  font-size: 14px !important;
+}
+
+.app-main {
+  .app-content {
+    .app-content--inner {
+      .modules-table--header {
+        .toggle-mobile-sidebar-btn {
+          padding: 0px 20px;
+          .hamburger-box .hamburger-inner {
+            background-color: #3c44b1 !important;
+          }
+          .hamburger-box .hamburger-inner::before {
+            background-color: #3c44b1 !important;
+          }
+          .hamburger-box .hamburger-inner::after {
+            background-color: #3c44b1 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1099.98px) {
+  .app-main {
+    .app-content {
+      .app-content--inner {
+        .modules-table--header {
+          .toggle-mobile-sidebar-btn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1099.98px) {
+  .app-main {
+    .app-content {
+      .app-content--inner {
+        .modules-table--header {
+          .modules-table--header-left {
+            border-right: none;
+            border-left: 1px solid #e5ebed;
+          }
+          .modules-table--header-center {
+            display: none;
+            transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 550px) {
+  .app-main {
+    .app-content {
+      .app-content--inner {
+        .modules-table--header {
+          .modules-table--header-right {
+            position: unset;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
